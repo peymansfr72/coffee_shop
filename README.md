@@ -27,7 +27,7 @@ coffee_shop/
 │   │
 │   ├── views/
 │   │   ├── home.php             # Home page
-│   │   ├── menu.php             # Coffee menu
+│   │   ├── menu.php             # Top navbar
 │   │   ├── product.php          # Product page
 │   │   ├── login.php            # Login page
 │   │   ├── signup.php           # Signup page
