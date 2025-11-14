@@ -112,5 +112,3 @@ http://localhost:3000
 
 * Frontend: plain HTML + CSS + Fetch API
 * Backend: Node.js, Express, MySQL
-
-```
