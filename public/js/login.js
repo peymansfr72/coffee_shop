@@ -1,20 +1,27 @@
 async function login() {
-  const email = document.getElementById("email").value;
+  const email = document.getElementById("email").value.trim();
   const password = document.getElementById("password").value;
 
-  const res = await fetch("/api/auth/login", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ email, password })
-  });
+  console.log("Login attempt:", { email, password });
 
-  const data = await res.json();
+  try {
+    const res = await fetch("/api/auth/login", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email, password })
+    });
 
-  if (!res.ok) {
-    alert(data.error);
-    return;
+    const data = await res.json();
+
+    if (!res.ok) {
+      alert(data.error);
+      return;
+    }
+
+    alert("Login successful!");
+    window.location.href = "/menu.html";
+  } catch (err) {
+    console.error("Fetch error:", err);
+    alert("Network error, try again.");
   }
-
-  alert("Login successful!");
-  window.location.href = "/menu.html";
 }
