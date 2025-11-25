@@ -63,7 +63,7 @@ coffee_shop/
    ```bash
    git clone https://github.com/Artur-Nayman/coffee_shop.git  
    cd coffee_shop  
-````
+   ````
 
 2. Install dependencies:
 
