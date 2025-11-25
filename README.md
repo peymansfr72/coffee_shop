@@ -1,4 +1,3 @@
-```markdown
 # ☕ Online Coffee Shop
 
 A web application for an online coffee shop where users can browse coffee products, view details, add items to the cart, and place orders. The project includes user registration/login and an admin panel for managing products and orders.
